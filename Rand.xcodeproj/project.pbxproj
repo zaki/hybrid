@@ -20,6 +20,23 @@
 		355F1C5C13B9D84800F54E9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 355F1C5A13B9D84800F54E9C /* InfoPlist.strings */; };
 		355F1C5F13B9D84800F54E9C /* RandTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 355F1C5E13B9D84800F54E9C /* RandTests.h */; };
 		355F1C6113B9D84800F54E9C /* RandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 355F1C6013B9D84800F54E9C /* RandTests.m */; };
+		355F1C6B13B9D96300F54E9C /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = 355F1C6A13B9D96300F54E9C /* Icons */; };
+		355F1C6F13B9DA1800F54E9C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355F1C6D13B9DA1800F54E9C /* HomeViewController.m */; };
+		355F1C7013B9DA1800F54E9C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355F1C6E13B9DA1800F54E9C /* HomeViewController.xib */; };
+		355F1C7413B9E22A00F54E9C /* GameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 355F1C7213B9E22900F54E9C /* GameViewController.mm */; };
+		355F1C7513B9E22A00F54E9C /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355F1C7313B9E22900F54E9C /* GameViewController.xib */; };
+		355F1C7713B9E2C400F54E9C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355F1C7613B9E2C400F54E9C /* OpenGLES.framework */; };
+		355F1C9D13B9E6F800F54E9C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355F1C9C13B9E6F800F54E9C /* QuartzCore.framework */; };
+		355F1CA513B9EE2E00F54E9C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355F1CA313B9EE2E00F54E9C /* AddressBook.framework */; };
+		355F1CA613B9EE2E00F54E9C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355F1CA413B9EE2E00F54E9C /* AddressBookUI.framework */; };
+		355F1CAC13B9EF5600F54E9C /* InviteTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355F1CAB13B9EF5600F54E9C /* InviteTableCell.m */; };
+		355F1CBB13B9F0B600F54E9C /* InviteTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355F1CBA13B9F0B600F54E9C /* InviteTableCell.xib */; };
+		35C220FC13BB13BF007B8941 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C220FB13BB13BF007B8941 /* Product.m */; };
+		35C2210413BB293D007B8941 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C2210313BB293D007B8941 /* libFlurry.a */; };
+		35EE6B1913BACBB300F6C6AB /* InviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE6B1713BACBB300F6C6AB /* InviteViewController.m */; };
+		35EE6B1A13BACBB300F6C6AB /* InviteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35EE6B1813BACBB300F6C6AB /* InviteViewController.xib */; };
+		35EE6B1F13BB05B500F6C6AB /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE6B1D13BB05B500F6C6AB /* ShopViewController.m */; };
+		35EE6B2013BB05B500F6C6AB /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35EE6B1E13BB05B500F6C6AB /* ShopViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +54,46 @@
 		355F1C3713B9D84700F54E9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		355F1C3913B9D84700F54E9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		355F1C3B13B9D84700F54E9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		355F1C3F13B9D84700F54E9C /* Rand-Info.plist */ = {isa = PBXFileReference; path = "Rand-Info.plist"; sourceTree = "<group>"; };
+		355F1C3F13B9D84700F54E9C /* Rand-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rand-Info.plist"; sourceTree = "<group>"; };
 		355F1C4113B9D84800F54E9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		355F1C4313B9D84800F54E9C /* Rand-Prefix.pch */ = {isa = PBXFileReference; path = "Rand-Prefix.pch"; sourceTree = "<group>"; };
+		355F1C4313B9D84800F54E9C /* Rand-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rand-Prefix.pch"; sourceTree = "<group>"; };
 		355F1C4413B9D84800F54E9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		355F1C4613B9D84800F54E9C /* RandAppDelegate.h */ = {isa = PBXFileReference; path = RandAppDelegate.h; sourceTree = "<group>"; };
+		355F1C4613B9D84800F54E9C /* RandAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandAppDelegate.h; sourceTree = "<group>"; };
 		355F1C4713B9D84800F54E9C /* RandAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandAppDelegate.m; sourceTree = "<group>"; };
 		355F1C4A13B9D84800F54E9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		355F1C5113B9D84800F54E9C /* RandTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		355F1C5913B9D84800F54E9C /* RandTests-Info.plist */ = {isa = PBXFileReference; path = "RandTests-Info.plist"; sourceTree = "<group>"; };
+		355F1C5913B9D84800F54E9C /* RandTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RandTests-Info.plist"; sourceTree = "<group>"; };
 		355F1C5B13B9D84800F54E9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		355F1C5D13B9D84800F54E9C /* RandTests-Prefix.pch */ = {isa = PBXFileReference; path = "RandTests-Prefix.pch"; sourceTree = "<group>"; };
+		355F1C5D13B9D84800F54E9C /* RandTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandTests-Prefix.pch"; sourceTree = "<group>"; };
 		355F1C5E13B9D84800F54E9C /* RandTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandTests.h; sourceTree = "<group>"; };
 		355F1C6013B9D84800F54E9C /* RandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandTests.m; sourceTree = "<group>"; };
+		355F1C6A13B9D96300F54E9C /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
+		355F1C6C13B9DA1800F54E9C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		355F1C6D13B9DA1800F54E9C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		355F1C6E13B9DA1800F54E9C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		355F1C7113B9E22900F54E9C /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		355F1C7213B9E22900F54E9C /* GameViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameViewController.mm; sourceTree = "<group>"; };
+		355F1C7313B9E22900F54E9C /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		355F1C7613B9E2C400F54E9C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		355F1C9C13B9E6F800F54E9C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		355F1CA313B9EE2E00F54E9C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		355F1CA413B9EE2E00F54E9C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		355F1CAA13B9EF5600F54E9C /* InviteTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InviteTableCell.h; path = Rand.xcodeproj/InviteTableCell.h; sourceTree = SOURCE_ROOT; };
+		355F1CAB13B9EF5600F54E9C /* InviteTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InviteTableCell.m; path = Rand.xcodeproj/InviteTableCell.m; sourceTree = SOURCE_ROOT; };
+		355F1CBA13B9F0B600F54E9C /* InviteTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InviteTableCell.xib; sourceTree = "<group>"; };
+		35C220FA13BB13BF007B8941 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		35C220FB13BB13BF007B8941 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		35C220FF13BB293D007B8941 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
+		35C2210013BB293D007B8941 /* FlurryAPI+AppCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlurryAPI+AppCircle.h"; sourceTree = "<group>"; };
+		35C2210113BB293D007B8941 /* FlurryOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryOffer.h; sourceTree = "<group>"; };
+		35C2210213BB293D007B8941 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
+		35C2210313BB293D007B8941 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
+		35EE6B1613BACBB300F6C6AB /* InviteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteViewController.h; sourceTree = "<group>"; };
+		35EE6B1713BACBB300F6C6AB /* InviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteViewController.m; sourceTree = "<group>"; };
+		35EE6B1813BACBB300F6C6AB /* InviteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InviteViewController.xib; sourceTree = "<group>"; };
+		35EE6B1C13BB05B500F6C6AB /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
+		35EE6B1D13BB05B500F6C6AB /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
+		35EE6B1E13BB05B500F6C6AB /* ShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +101,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				355F1CA513B9EE2E00F54E9C /* AddressBook.framework in Frameworks */,
+				355F1CA613B9EE2E00F54E9C /* AddressBookUI.framework in Frameworks */,
+				355F1C9D13B9E6F800F54E9C /* QuartzCore.framework in Frameworks */,
+				355F1C7713B9E2C400F54E9C /* OpenGLES.framework in Frameworks */,
 				355F1C3813B9D84700F54E9C /* UIKit.framework in Frameworks */,
 				355F1C3A13B9D84700F54E9C /* Foundation.framework in Frameworks */,
 				355F1C3C13B9D84700F54E9C /* CoreGraphics.framework in Frameworks */,
+				35C2210413BB293D007B8941 /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +128,9 @@
 		355F1C2813B9D84700F54E9C = {
 			isa = PBXGroup;
 			children = (
+				355F1CA313B9EE2E00F54E9C /* AddressBook.framework */,
+				355F1CA413B9EE2E00F54E9C /* AddressBookUI.framework */,
+				355F1C9C13B9E6F800F54E9C /* QuartzCore.framework */,
 				355F1C3D13B9D84700F54E9C /* Rand */,
 				355F1C5713B9D84800F54E9C /* RandTests */,
 				355F1C3613B9D84700F54E9C /* Frameworks */,
@@ -98,6 +150,7 @@
 		355F1C3613B9D84700F54E9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				355F1C7613B9E2C400F54E9C /* OpenGLES.framework */,
 				355F1C3713B9D84700F54E9C /* UIKit.framework */,
 				355F1C3913B9D84700F54E9C /* Foundation.framework */,
 				355F1C3B13B9D84700F54E9C /* CoreGraphics.framework */,
@@ -108,6 +161,11 @@
 		355F1C3D13B9D84700F54E9C /* Rand */ = {
 			isa = PBXGroup;
 			children = (
+				35C220FD13BB293D007B8941 /* FlurryLib */,
+				35C220F813BB13A7007B8941 /* Models */,
+				355F1CAE13B9EF7600F54E9C /* Views */,
+				355F1CAD13B9EF5F00F54E9C /* ViewControllers */,
+				355F1C6A13B9D96300F54E9C /* Icons */,
 				355F1C4613B9D84800F54E9C /* RandAppDelegate.h */,
 				355F1C4713B9D84800F54E9C /* RandAppDelegate.m */,
 				355F1C4913B9D84800F54E9C /* MainWindow.xib */,
@@ -145,6 +203,96 @@
 				355F1C5D13B9D84800F54E9C /* RandTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		355F1CAD13B9EF5F00F54E9C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				35EE6B1B13BB058E00F6C6AB /* Shop */,
+				355F1CB113B9EF9900F54E9C /* Invite */,
+				355F1CB013B9EF9700F54E9C /* Game */,
+				355F1CAF13B9EF9400F54E9C /* Home */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		355F1CAE13B9EF7600F54E9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				355F1CAA13B9EF5600F54E9C /* InviteTableCell.h */,
+				355F1CAB13B9EF5600F54E9C /* InviteTableCell.m */,
+				355F1CBA13B9F0B600F54E9C /* InviteTableCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		355F1CAF13B9EF9400F54E9C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				355F1C6C13B9DA1800F54E9C /* HomeViewController.h */,
+				355F1C6D13B9DA1800F54E9C /* HomeViewController.m */,
+				355F1C6E13B9DA1800F54E9C /* HomeViewController.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		355F1CB013B9EF9700F54E9C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				355F1C7113B9E22900F54E9C /* GameViewController.h */,
+				355F1C7213B9E22900F54E9C /* GameViewController.mm */,
+				355F1C7313B9E22900F54E9C /* GameViewController.xib */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		355F1CB113B9EF9900F54E9C /* Invite */ = {
+			isa = PBXGroup;
+			children = (
+				35EE6B1613BACBB300F6C6AB /* InviteViewController.h */,
+				35EE6B1713BACBB300F6C6AB /* InviteViewController.m */,
+				35EE6B1813BACBB300F6C6AB /* InviteViewController.xib */,
+			);
+			name = Invite;
+			sourceTree = "<group>";
+		};
+		35C220F813BB13A7007B8941 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35C220FA13BB13BF007B8941 /* Product.h */,
+				35C220FB13BB13BF007B8941 /* Product.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		35C220FD13BB293D007B8941 /* FlurryLib */ = {
+			isa = PBXGroup;
+			children = (
+				35C220FE13BB293D007B8941 /* AppCircle */,
+				35C2210213BB293D007B8941 /* FlurryAPI.h */,
+				35C2210313BB293D007B8941 /* libFlurry.a */,
+			);
+			path = FlurryLib;
+			sourceTree = "<group>";
+		};
+		35C220FE13BB293D007B8941 /* AppCircle */ = {
+			isa = PBXGroup;
+			children = (
+				35C220FF13BB293D007B8941 /* FlurryAdDelegate.h */,
+				35C2210013BB293D007B8941 /* FlurryAPI+AppCircle.h */,
+				35C2210113BB293D007B8941 /* FlurryOffer.h */,
+			);
+			path = AppCircle;
+			sourceTree = "<group>";
+		};
+		35EE6B1B13BB058E00F6C6AB /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				35EE6B1C13BB05B500F6C6AB /* ShopViewController.h */,
+				35EE6B1D13BB05B500F6C6AB /* ShopViewController.m */,
+				35EE6B1E13BB05B500F6C6AB /* ShopViewController.xib */,
+			);
+			name = Shop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +367,12 @@
 			files = (
 				355F1C4213B9D84800F54E9C /* InfoPlist.strings in Resources */,
 				355F1C4B13B9D84800F54E9C /* MainWindow.xib in Resources */,
+				355F1C6B13B9D96300F54E9C /* Icons in Resources */,
+				355F1C7013B9DA1800F54E9C /* HomeViewController.xib in Resources */,
+				355F1C7513B9E22A00F54E9C /* GameViewController.xib in Resources */,
+				355F1CBB13B9F0B600F54E9C /* InviteTableCell.xib in Resources */,
+				35EE6B1A13BACBB300F6C6AB /* InviteViewController.xib in Resources */,
+				35EE6B2013BB05B500F6C6AB /* ShopViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +410,12 @@
 			files = (
 				355F1C4513B9D84800F54E9C /* main.m in Sources */,
 				355F1C4813B9D84800F54E9C /* RandAppDelegate.m in Sources */,
+				355F1C6F13B9DA1800F54E9C /* HomeViewController.m in Sources */,
+				355F1C7413B9E22A00F54E9C /* GameViewController.mm in Sources */,
+				355F1CAC13B9EF5600F54E9C /* InviteTableCell.m in Sources */,
+				35EE6B1913BACBB300F6C6AB /* InviteViewController.m in Sources */,
+				35EE6B1F13BB05B500F6C6AB /* ShopViewController.m in Sources */,
+				35C220FC13BB13BF007B8941 /* Product.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +506,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rand/Rand-Prefix.pch";
 				INFOPLIST_FILE = "Rand/Rand-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Rand/FlurryLib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -359,6 +523,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rand/Rand-Prefix.pch";
 				INFOPLIST_FILE = "Rand/Rand-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Rand/FlurryLib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -428,6 +596,7 @@
 				355F1C6613B9D84800F54E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		355F1C6713B9D84800F54E9C /* Build configuration list for PBXNativeTarget "RandTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +605,7 @@
 				355F1C6913B9D84800F54E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

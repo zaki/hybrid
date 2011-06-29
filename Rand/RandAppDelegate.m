@@ -6,6 +6,7 @@
 //  Copyright 2011 Friday Systems. All rights reserved.
 //
 
+#import "FlurryAPI.h"
 #import "RandAppDelegate.h"
 
 @implementation RandAppDelegate
@@ -16,8 +17,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // Override point for customization after application launch.
+  [FlurryAPI startSession:@"QI9WP6VYSTVWRRY3YZPR"];
+  
   [self.window makeKeyAndVisible];
-    return YES;
+  return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
