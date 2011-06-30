@@ -98,6 +98,8 @@
 	
   Product *product = [products objectAtIndex:[indexPath row]];
   cell.textLabel.text = product.name;
+  NSString *fileName = [NSString stringWithFormat:@"Icons/coins%@.png", (row == 0 ? @"" : (row < 3 ? @"_2" : (row < 5 ? @"_3" : @"_4")))];
+  cell.imageView.image = [UIImage imageNamed:fileName];
   UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
   button.frame = CGRectMake(0, 0, 70, 30);
   [button setTitle:product.price forState:UIControlStateNormal];
