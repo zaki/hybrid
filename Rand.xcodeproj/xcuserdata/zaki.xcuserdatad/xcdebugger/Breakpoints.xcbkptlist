@@ -9,11 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Rand/ShopViewController.m"
-         timestampString = "331033091.421241"
+         timestampString = "331107944.344434"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "85"
-         endingLineNumber = "85"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
          landmarkName = "-tableView:numberOfRowsInSection:"
          landmarkType = "5">
       </FileBreakpoint>

@@ -6,6 +6,7 @@
 //  Copyright 2011 Friday Systems. All rights reserved.
 //
 
+#import "FlurryAPI.h"
 #import "InviteTableCell.h"
 #import "InviteViewController.h"
 #import <AddressBook/AddressBook.h>
@@ -15,6 +16,7 @@
 @synthesize people;
 @synthesize tableView;
 @synthesize navTitle;
+@synthesize navButton;
 
 - (void) loadPeople
 {
@@ -84,6 +86,9 @@
   // Do any additional setup after loading the view from its nib.
   [self loadPeople];
   selectedContacts = 0;
+  self.navButton.enabled = NO;
+  self.navButton.target = self;
+  self.navButton.action = @selector(clickedInviteButton:);
 }
 
 - (void)viewDidUnload
@@ -117,6 +122,14 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void) clickedInviteButton:(id)sender
+{
+  UIButton *button = (UIButton *)sender;
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Send Invites" message:[NSString stringWithFormat:@"Send Invite to %d of Your Friends?", selectedContacts] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+  [FlurryAPI logEvent:[NSString stringWithFormat:@"INVITE:CLICK"]];
+  [alert show]; 
 }
 
 #pragma mark - Table view data source
@@ -155,6 +168,7 @@
   cell.accessoryType = cell.accessoryType == UITableViewCellAccessoryCheckmark ? UITableViewCellAccessoryNone : UITableViewCellAccessoryCheckmark;
   
   selectedContacts += (cell.accessoryType == UITableViewCellAccessoryCheckmark ? 1 : -1);
+  self.navButton.enabled = (selectedContacts > 0);
   
   navTitle.title = [NSString stringWithFormat:@"%d Contact%@ Selected", selectedContacts, selectedContacts > 1 ? @"s" : @""];
 }

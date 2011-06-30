@@ -6,6 +6,7 @@
 //  Copyright 2011 Friday Systems. All rights reserved.
 //
 
+#import <StoreKit/StoreKit.h>
 #import "ShopViewController.h"
 #import "Product.h"
 #import "FlurryAPI.h"
@@ -101,17 +102,27 @@
   button.frame = CGRectMake(0, 0, 70, 30);
   [button setTitle:product.price forState:UIControlStateNormal];
   
+  [button addTarget:self action:@selector(shopButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+  
   cell.accessoryView = button;
   
-  //cell.accessoryType = UITableViewCellAccessoryCheckmark;
+  cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	return cell;
+}
+
+- (void) shopButtonClicked:(id)sender
+{
+  UIButton *button = (UIButton *)sender;
+  UITableViewCell *tableViewCell = (UITableViewCell *)button.superview;
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:tableViewCell.textLabel.text message:[NSString stringWithFormat:@"Buy %@ for %@?", tableViewCell.textLabel.text, button.titleLabel.text] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+  [FlurryAPI logEvent:[NSString stringWithFormat:@"SHOP:SELECT:", button.titleLabel.text]];
+  [alert show];
 }
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  [FlurryAPI logEvent:@"Shop row selected"];
 }
 
 @end

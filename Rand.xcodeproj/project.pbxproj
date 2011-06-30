@@ -31,6 +31,7 @@
 		355F1CA613B9EE2E00F54E9C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355F1CA413B9EE2E00F54E9C /* AddressBookUI.framework */; };
 		355F1CAC13B9EF5600F54E9C /* InviteTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355F1CAB13B9EF5600F54E9C /* InviteTableCell.m */; };
 		355F1CBB13B9F0B600F54E9C /* InviteTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355F1CBA13B9F0B600F54E9C /* InviteTableCell.xib */; };
+		3586D9E013BC4A0E0049B260 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3586D9DF13BC4A0E0049B260 /* StoreKit.framework */; };
 		35C220FC13BB13BF007B8941 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C220FB13BB13BF007B8941 /* Product.m */; };
 		35C2210413BB293D007B8941 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C2210313BB293D007B8941 /* libFlurry.a */; };
 		35EE6B1913BACBB300F6C6AB /* InviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE6B1713BACBB300F6C6AB /* InviteViewController.m */; };
@@ -81,6 +82,7 @@
 		355F1CAA13B9EF5600F54E9C /* InviteTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InviteTableCell.h; path = Rand.xcodeproj/InviteTableCell.h; sourceTree = SOURCE_ROOT; };
 		355F1CAB13B9EF5600F54E9C /* InviteTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InviteTableCell.m; path = Rand.xcodeproj/InviteTableCell.m; sourceTree = SOURCE_ROOT; };
 		355F1CBA13B9F0B600F54E9C /* InviteTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InviteTableCell.xib; sourceTree = "<group>"; };
+		3586D9DF13BC4A0E0049B260 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		35C220FA13BB13BF007B8941 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		35C220FB13BB13BF007B8941 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		35C220FF13BB293D007B8941 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3586D9E013BC4A0E0049B260 /* StoreKit.framework in Frameworks */,
 				355F1CA513B9EE2E00F54E9C /* AddressBook.framework in Frameworks */,
 				355F1CA613B9EE2E00F54E9C /* AddressBookUI.framework in Frameworks */,
 				355F1C9D13B9E6F800F54E9C /* QuartzCore.framework in Frameworks */,
@@ -128,9 +131,6 @@
 		355F1C2813B9D84700F54E9C = {
 			isa = PBXGroup;
 			children = (
-				355F1CA313B9EE2E00F54E9C /* AddressBook.framework */,
-				355F1CA413B9EE2E00F54E9C /* AddressBookUI.framework */,
-				355F1C9C13B9E6F800F54E9C /* QuartzCore.framework */,
 				355F1C3D13B9D84700F54E9C /* Rand */,
 				355F1C5713B9D84800F54E9C /* RandTests */,
 				355F1C3613B9D84700F54E9C /* Frameworks */,
@@ -150,6 +150,10 @@
 		355F1C3613B9D84700F54E9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3586D9DF13BC4A0E0049B260 /* StoreKit.framework */,
+				355F1CA313B9EE2E00F54E9C /* AddressBook.framework */,
+				355F1CA413B9EE2E00F54E9C /* AddressBookUI.framework */,
+				355F1C9C13B9E6F800F54E9C /* QuartzCore.framework */,
 				355F1C7613B9E2C400F54E9C /* OpenGLES.framework */,
 				355F1C3713B9D84700F54E9C /* UIKit.framework */,
 				355F1C3913B9D84700F54E9C /* Foundation.framework */,
