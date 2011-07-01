@@ -38,6 +38,7 @@
 		35EE6B1A13BACBB300F6C6AB /* InviteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35EE6B1813BACBB300F6C6AB /* InviteViewController.xib */; };
 		35EE6B1F13BB05B500F6C6AB /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE6B1D13BB05B500F6C6AB /* ShopViewController.m */; };
 		35EE6B2013BB05B500F6C6AB /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35EE6B1E13BB05B500F6C6AB /* ShopViewController.xib */; };
+		35FE83E513BDA0F40068DE92 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FE83E413BDA0F40068DE92 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		35EE6B1C13BB05B500F6C6AB /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
 		35EE6B1D13BB05B500F6C6AB /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
 		35EE6B1E13BB05B500F6C6AB /* ShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopViewController.xib; sourceTree = "<group>"; };
+		35FE83E313BDA0F40068DE92 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		35FE83E413BDA0F40068DE92 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +268,8 @@
 			children = (
 				35C220FA13BB13BF007B8941 /* Product.h */,
 				35C220FB13BB13BF007B8941 /* Product.m */,
+				35FE83E313BDA0F40068DE92 /* Person.h */,
+				35FE83E413BDA0F40068DE92 /* Person.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 				35EE6B1913BACBB300F6C6AB /* InviteViewController.m in Sources */,
 				35EE6B1F13BB05B500F6C6AB /* ShopViewController.m in Sources */,
 				35C220FC13BB13BF007B8941 /* Product.m in Sources */,
+				35FE83E513BDA0F40068DE92 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,7 @@
   [products addObject:[[Product alloc] initWithName:@"10 Coin Pack"       price:@"$2.99" productId:@""]];
   [products addObject:[[Product alloc] initWithName:@"20 Coin Superpack"  price:@"$3.99" productId:@""]];
   [products addObject:[[Product alloc] initWithName:@"50 Coin Megapack"   price:@"$4.99" productId:@""]];
-  [products addObject:[[Product alloc] initWithName:@"100 Coin Überpack"   price:@"$5.99" productId:@""]];
+  [products addObject:[[Product alloc] initWithName:@"100 Coin Überpack"  price:@"$5.99" productId:@""]];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

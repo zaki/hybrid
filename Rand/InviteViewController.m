@@ -6,6 +6,7 @@
 //  Copyright 2011 Friday Systems. All rights reserved.
 //
 
+#import "Person.h"
 #import "FlurryAPI.h"
 #import "InviteTableCell.h"
 #import "InviteViewController.h"
@@ -45,11 +46,41 @@
     ABRecordRef ref = CFArrayGetValueAtIndex(peopleMutable, i);
     CFStringRef firstName = ABRecordCopyValue(ref, kABPersonFirstNameProperty);
     CFStringRef lastName = ABRecordCopyValue(ref, kABPersonLastNameProperty);
-    NSString *contactFirstLast = [NSString stringWithFormat: @"%@ %@", (NSString*) firstName, (NSString *)lastName];
+
+    NSString *strEmail = @"";
+    CFStringRef email = NULL;
+    
+    ABMultiValueRef emails = ABRecordCopyValue(ref, kABPersonEmailProperty);
+    CFIndex emailCount = ABMultiValueGetCount(emails);
+    if (emailCount > 0)
+    {
+      for (int i = 0; i < emailCount; i++)
+      {
+        NSString *emailLabel = (NSString *)ABMultiValueCopyLabelAtIndex(emails, i);
+        
+        if ([emailLabel rangeOfString:@"Work"].location == NSNotFound)
+        {
+          email = ABMultiValueCopyValueAtIndex(emails, i);
+          strEmail = (NSString *)email;
+          break;
+        }
+      }
+      
+
+
+      NSString *contactFirstLast = [NSString stringWithFormat: @"%@ %@", (NSString*) firstName, (NSString *)lastName];
+    
+      Person *person = [[Person alloc] initWithName:contactFirstLast email:strEmail];
+      [self.people addObject:person];
+      [person release];
+    }
+    
     CFRelease(firstName);
     CFRelease(lastName);
-    [self.people addObject:contactFirstLast];
-    //[contactFirstLast release];
+    CFRelease(emails);
+    
+    if (email != NULL)
+      CFRelease(email);
   }
 
   CFRelease(peopleMutable);
@@ -146,15 +177,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {  
-  [self loadPeople];
+  //[self loadPeople];
   NSInteger row = [indexPath row];
 	
 	// Create a cell if one is not already available
 	UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"any-cell"];
 	if (cell == nil) 
-    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"any-cell"] autorelease];
+    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"any-cell"] autorelease];
 	
-  cell.textLabel.text = [self.people objectAtIndex:[indexPath row]];
+  Person *person = [self.people objectAtIndex:[indexPath row]];
+  
+  cell.textLabel.text = person.name;
+  cell.detailTextLabel.text = person.email;
 
   //cell.accessoryType = UITableViewCellAccessoryCheckmark;
 	return cell;
