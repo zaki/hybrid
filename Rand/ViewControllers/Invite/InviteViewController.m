@@ -56,9 +56,8 @@
     {
       for (int i = 0; i < emailCount; i++)
       {
-        NSString *emailLabel = (NSString *)ABMultiValueCopyLabelAtIndex(emails, i);
-        
-        if ([emailLabel rangeOfString:@"Work"].location == NSNotFound)
+        CFStringRef emailLabel = (NSString *)ABMultiValueCopyLabelAtIndex(emails, i);
+        if (emailLabel == NULL || CFStringCompare(emailLabel, kABWorkLabel, 0) != 0)
         {
           email = ABMultiValueCopyValueAtIndex(emails, i);
           strEmail = (NSString *)email;
@@ -66,19 +65,26 @@
         }
       }
       
-
-
-      NSString *contactFirstLast = [NSString stringWithFormat: @"%@ %@", (NSString*) firstName, (NSString *)lastName];
-    
-      Person *person = [[Person alloc] initWithName:contactFirstLast email:strEmail];
-      [self.people addObject:person];
-      [person release];
+      if (firstName != NULL || lastName != NULL)
+      {
+        NSString *strFirst, *strLast;
+      
+        strFirst = (firstName == NULL ? @"" : (NSString *)firstName);
+        strLast =  (lastName  == NULL ? @"" : (NSString *)lastName);
+      
+        NSString *contactFirstLast = [NSString stringWithFormat: @"%@ %@", strFirst, strLast];
+        Person *person = [[Person alloc] initWithName:contactFirstLast email:strEmail];
+        [self.people addObject:person];
+        [person release];
+      }
     }
     
-    CFRelease(firstName);
-    CFRelease(lastName);
-    CFRelease(emails);
-    
+    if (firstName != NULL)
+      CFRelease(firstName);
+    if (lastName != NULL)
+      CFRelease(lastName);
+    if (emails != NULL)
+      CFRelease(emails);
     if (email != NULL)
       CFRelease(email);
   }
