@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class EAGLView;
 
 @interface GameViewController : UIViewController {
+  IBOutlet EAGLView *glView;
+  CGPoint startTouchPosition;
 }
+
+@property (nonatomic, retain) EAGLView *glView;
 
 @end

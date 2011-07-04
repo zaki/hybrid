@@ -7,8 +7,11 @@
 //
 
 #import "GameViewController.h"
+#import "FlurryAPI.h"
 
 @implementation GameViewController
+
+@synthesize glView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,7 +34,23 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+#pragma mark - Touches
+
 #pragma mark - View lifecycle
+
+- (void)viewDidAppear:(BOOL)animated
+{
+  [FlurryAPI logEvent:@"GAME:OPENED"];
+  [super viewDidAppear:animated];
+  [glView startAnimation];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+  [FlurryAPI logEvent:@"GAME:CLOSED"];
+  [super viewDidDisappear:animated];
+  [glView stopAnimation];
+}
 
 - (void)viewDidLoad
 {

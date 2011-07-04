@@ -39,6 +39,24 @@
 		355F1CA613B9EE2E00F54E9C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355F1CA413B9EE2E00F54E9C /* AddressBookUI.framework */; };
 		355F1CAC13B9EF5600F54E9C /* InviteTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355F1CAB13B9EF5600F54E9C /* InviteTableCell.m */; };
 		3586D9E013BC4A0E0049B260 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3586D9DF13BC4A0E0049B260 /* StoreKit.framework */; };
+		3590088513C1C0A800400CF7 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3590087413C1C0A800400CF7 /* EAGLView.m */; };
+		3590088613C1C0A800400CF7 /* ES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3590087613C1C0A800400CF7 /* ES2Renderer.m */; };
+		3590088713C1C0A800400CF7 /* OpenGLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3590087813C1C0A800400CF7 /* OpenGLRenderer.m */; };
+		3590088813C1C0A800400CF7 /* imageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3590087C13C1C0A800400CF7 /* imageUtil.m */; };
+		3590088913C1C0A800400CF7 /* matrixUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 3590087D13C1C0A800400CF7 /* matrixUtil.c */; };
+		3590088A13C1C0A800400CF7 /* modelUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 3590087F13C1C0A800400CF7 /* modelUtil.c */; };
+		3590088B13C1C0A800400CF7 /* sourceUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 3590088113C1C0A800400CF7 /* sourceUtil.c */; };
+		3590088C13C1C0A800400CF7 /* vectorUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 3590088313C1C0A800400CF7 /* vectorUtil.c */; };
+		3590089D13C1C1BA00400CF7 /* demon.model in Resources */ = {isa = PBXBuildFile; fileRef = 3590089B13C1C1BA00400CF7 /* demon.model */; };
+		3590089E13C1C1BA00400CF7 /* demon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3590089C13C1C1BA00400CF7 /* demon.png */; };
+		359008A313C1C1CF00400CF7 /* character.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 3590089F13C1C1CF00400CF7 /* character.fsh */; };
+		359008A413C1C1CF00400CF7 /* character.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 359008A013C1C1CF00400CF7 /* character.vsh */; };
+		359008A513C1C1CF00400CF7 /* reflect.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 359008A113C1C1CF00400CF7 /* reflect.fsh */; };
+		359008A613C1C1CF00400CF7 /* reflect.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 359008A213C1C1CF00400CF7 /* reflect.vsh */; };
+		359008A713C1C1D800400CF7 /* character.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3590089F13C1C1CF00400CF7 /* character.fsh */; };
+		359008A813C1C1D800400CF7 /* character.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 359008A013C1C1CF00400CF7 /* character.vsh */; };
+		359008A913C1C1D800400CF7 /* reflect.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 359008A113C1C1CF00400CF7 /* reflect.fsh */; };
+		359008AA13C1C1D800400CF7 /* reflect.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 359008A213C1C1CF00400CF7 /* reflect.vsh */; };
 		35C2210413BB293D007B8941 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C2210313BB293D007B8941 /* libFlurry.a */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +114,29 @@
 		355F1CAA13B9EF5600F54E9C /* InviteTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InviteTableCell.h; path = Rand/Views/InviteTableCell.h; sourceTree = SOURCE_ROOT; };
 		355F1CAB13B9EF5600F54E9C /* InviteTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InviteTableCell.m; path = Rand/Views/InviteTableCell.m; sourceTree = SOURCE_ROOT; };
 		3586D9DF13BC4A0E0049B260 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3590087313C1C0A800400CF7 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAGLView.h; path = OGL/EAGLView.h; sourceTree = "<group>"; };
+		3590087413C1C0A800400CF7 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EAGLView.m; path = OGL/EAGLView.m; sourceTree = "<group>"; };
+		3590087513C1C0A800400CF7 /* ES2Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES2Renderer.h; path = OGL/ES2Renderer.h; sourceTree = "<group>"; };
+		3590087613C1C0A800400CF7 /* ES2Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ES2Renderer.m; path = OGL/ES2Renderer.m; sourceTree = "<group>"; };
+		3590087713C1C0A800400CF7 /* OpenGLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLRenderer.h; path = OGL/OpenGLRenderer.h; sourceTree = "<group>"; };
+		3590087813C1C0A800400CF7 /* OpenGLRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLRenderer.m; path = OGL/OpenGLRenderer.m; sourceTree = "<group>"; };
+		3590087A13C1C0A800400CF7 /* glUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glUtil.h; sourceTree = "<group>"; };
+		3590087B13C1C0A800400CF7 /* imageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageUtil.h; sourceTree = "<group>"; };
+		3590087C13C1C0A800400CF7 /* imageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageUtil.m; sourceTree = "<group>"; };
+		3590087D13C1C0A800400CF7 /* matrixUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrixUtil.c; sourceTree = "<group>"; };
+		3590087E13C1C0A800400CF7 /* matrixUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrixUtil.h; sourceTree = "<group>"; };
+		3590087F13C1C0A800400CF7 /* modelUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = modelUtil.c; sourceTree = "<group>"; };
+		3590088013C1C0A800400CF7 /* modelUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelUtil.h; sourceTree = "<group>"; };
+		3590088113C1C0A800400CF7 /* sourceUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sourceUtil.c; sourceTree = "<group>"; };
+		3590088213C1C0A800400CF7 /* sourceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sourceUtil.h; sourceTree = "<group>"; };
+		3590088313C1C0A800400CF7 /* vectorUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vectorUtil.c; sourceTree = "<group>"; };
+		3590088413C1C0A800400CF7 /* vectorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vectorUtil.h; sourceTree = "<group>"; };
+		3590089B13C1C1BA00400CF7 /* demon.model */ = {isa = PBXFileReference; lastKnownFileType = file; name = demon.model; path = Resources/demon.model; sourceTree = "<group>"; };
+		3590089C13C1C1BA00400CF7 /* demon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demon.png; path = Resources/demon.png; sourceTree = "<group>"; };
+		3590089F13C1C1CF00400CF7 /* character.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = character.fsh; path = Shaders/character.fsh; sourceTree = "<group>"; };
+		359008A013C1C1CF00400CF7 /* character.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = character.vsh; path = Shaders/character.vsh; sourceTree = "<group>"; };
+		359008A113C1C1CF00400CF7 /* reflect.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = reflect.fsh; path = Shaders/reflect.fsh; sourceTree = "<group>"; };
+		359008A213C1C1CF00400CF7 /* reflect.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = reflect.vsh; path = Shaders/reflect.vsh; sourceTree = "<group>"; };
 		35C220FF13BB293D007B8941 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
 		35C2210013BB293D007B8941 /* FlurryAPI+AppCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlurryAPI+AppCircle.h"; sourceTree = "<group>"; };
 		35C2210113BB293D007B8941 /* FlurryOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryOffer.h; sourceTree = "<group>"; };
@@ -172,6 +213,9 @@
 		355F1C3D13B9D84700F54E9C /* Rand */ = {
 			isa = PBXGroup;
 			children = (
+				3590089A13C1C19B00400CF7 /* Resources */,
+				3590089913C1C19200400CF7 /* Shaders */,
+				3590087113C1C08D00400CF7 /* OGL */,
 				355F1CAD13B9EF5F00F54E9C /* ViewControllers */,
 				35C220FD13BB293D007B8941 /* FlurryLib */,
 				35C220F813BB13A7007B8941 /* Models */,
@@ -265,6 +309,59 @@
 				352F185B13C175B30081079A /* InviteViewController.xib */,
 			);
 			name = Invite;
+			sourceTree = "<group>";
+		};
+		3590087113C1C08D00400CF7 /* OGL */ = {
+			isa = PBXGroup;
+			children = (
+				3590087313C1C0A800400CF7 /* EAGLView.h */,
+				3590087413C1C0A800400CF7 /* EAGLView.m */,
+				3590087513C1C0A800400CF7 /* ES2Renderer.h */,
+				3590087613C1C0A800400CF7 /* ES2Renderer.m */,
+				3590087713C1C0A800400CF7 /* OpenGLRenderer.h */,
+				3590087813C1C0A800400CF7 /* OpenGLRenderer.m */,
+				3590087913C1C0A800400CF7 /* UtilSrc */,
+			);
+			name = OGL;
+			sourceTree = "<group>";
+		};
+		3590087913C1C0A800400CF7 /* UtilSrc */ = {
+			isa = PBXGroup;
+			children = (
+				3590087A13C1C0A800400CF7 /* glUtil.h */,
+				3590087B13C1C0A800400CF7 /* imageUtil.h */,
+				3590087C13C1C0A800400CF7 /* imageUtil.m */,
+				3590087D13C1C0A800400CF7 /* matrixUtil.c */,
+				3590087E13C1C0A800400CF7 /* matrixUtil.h */,
+				3590087F13C1C0A800400CF7 /* modelUtil.c */,
+				3590088013C1C0A800400CF7 /* modelUtil.h */,
+				3590088113C1C0A800400CF7 /* sourceUtil.c */,
+				3590088213C1C0A800400CF7 /* sourceUtil.h */,
+				3590088313C1C0A800400CF7 /* vectorUtil.c */,
+				3590088413C1C0A800400CF7 /* vectorUtil.h */,
+			);
+			name = UtilSrc;
+			path = OGL/UtilSrc;
+			sourceTree = "<group>";
+		};
+		3590089913C1C19200400CF7 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				3590089F13C1C1CF00400CF7 /* character.fsh */,
+				359008A013C1C1CF00400CF7 /* character.vsh */,
+				359008A113C1C1CF00400CF7 /* reflect.fsh */,
+				359008A213C1C1CF00400CF7 /* reflect.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		3590089A13C1C19B00400CF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3590089B13C1C1BA00400CF7 /* demon.model */,
+				3590089C13C1C1BA00400CF7 /* demon.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		35C220F813BB13A7007B8941 /* Models */ = {
@@ -378,6 +475,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359008A713C1C1D800400CF7 /* character.fsh in Resources */,
+				359008A813C1C1D800400CF7 /* character.vsh in Resources */,
+				359008A913C1C1D800400CF7 /* reflect.fsh in Resources */,
+				359008AA13C1C1D800400CF7 /* reflect.vsh in Resources */,
 				355F1C4213B9D84800F54E9C /* InfoPlist.strings in Resources */,
 				355F1C4B13B9D84800F54E9C /* MainWindow.xib in Resources */,
 				355F1C6B13B9D96300F54E9C /* Icons in Resources */,
@@ -386,6 +487,8 @@
 				352F185D13C175B30081079A /* InviteViewController.xib in Resources */,
 				352F186213C175C20081079A /* GameViewController.xib in Resources */,
 				352F186713C175CF0081079A /* HomeViewController.xib in Resources */,
+				3590089D13C1C1BA00400CF7 /* demon.model in Resources */,
+				3590089E13C1C1BA00400CF7 /* demon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +533,18 @@
 				352F185C13C175B30081079A /* InviteViewController.m in Sources */,
 				352F186113C175C20081079A /* GameViewController.mm in Sources */,
 				352F186613C175CF0081079A /* HomeViewController.m in Sources */,
+				3590088513C1C0A800400CF7 /* EAGLView.m in Sources */,
+				3590088613C1C0A800400CF7 /* ES2Renderer.m in Sources */,
+				3590088713C1C0A800400CF7 /* OpenGLRenderer.m in Sources */,
+				3590088813C1C0A800400CF7 /* imageUtil.m in Sources */,
+				3590088913C1C0A800400CF7 /* matrixUtil.c in Sources */,
+				3590088A13C1C0A800400CF7 /* modelUtil.c in Sources */,
+				3590088B13C1C0A800400CF7 /* sourceUtil.c in Sources */,
+				3590088C13C1C0A800400CF7 /* vectorUtil.c in Sources */,
+				359008A313C1C1CF00400CF7 /* character.fsh in Sources */,
+				359008A413C1C1CF00400CF7 /* character.vsh in Sources */,
+				359008A513C1C1CF00400CF7 /* reflect.fsh in Sources */,
+				359008A613C1C1CF00400CF7 /* reflect.vsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
