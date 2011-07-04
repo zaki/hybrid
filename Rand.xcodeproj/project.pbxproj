@@ -18,6 +18,7 @@
 		352F186213C175C20081079A /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352F186013C175C20081079A /* GameViewController.xib */; };
 		352F186613C175CF0081079A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352F186413C175CF0081079A /* HomeViewController.m */; };
 		352F186713C175CF0081079A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352F186513C175CF0081079A /* HomeViewController.xib */; };
+		352F186913C177FE0081079A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352F186813C177FE0081079A /* SystemConfiguration.framework */; };
 		355F1C3813B9D84700F54E9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355F1C3713B9D84700F54E9C /* UIKit.framework */; };
 		355F1C3A13B9D84700F54E9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355F1C3913B9D84700F54E9C /* Foundation.framework */; };
 		355F1C3C13B9D84700F54E9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 355F1C3B13B9D84700F54E9C /* CoreGraphics.framework */; };
@@ -69,6 +70,7 @@
 		352F186313C175CF0081079A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ViewControllers/Home/HomeViewController.h; sourceTree = "<group>"; };
 		352F186413C175CF0081079A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ViewControllers/Home/HomeViewController.m; sourceTree = "<group>"; };
 		352F186513C175CF0081079A /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = ViewControllers/Home/HomeViewController.xib; sourceTree = "<group>"; };
+		352F186813C177FE0081079A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		355F1C3313B9D84700F54E9C /* Rand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		355F1C3713B9D84700F54E9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		355F1C3913B9D84700F54E9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,7 +93,7 @@
 		355F1C9C13B9E6F800F54E9C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		355F1CA313B9EE2E00F54E9C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		355F1CA413B9EE2E00F54E9C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		355F1CAA13B9EF5600F54E9C /* InviteTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; name = InviteTableCell.h; path = Rand/Views/InviteTableCell.h; sourceTree = SOURCE_ROOT; };
+		355F1CAA13B9EF5600F54E9C /* InviteTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InviteTableCell.h; path = Rand/Views/InviteTableCell.h; sourceTree = SOURCE_ROOT; };
 		355F1CAB13B9EF5600F54E9C /* InviteTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InviteTableCell.m; path = Rand/Views/InviteTableCell.m; sourceTree = SOURCE_ROOT; };
 		3586D9DF13BC4A0E0049B260 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		35C220FF13BB293D007B8941 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352F186913C177FE0081079A /* SystemConfiguration.framework in Frameworks */,
 				3586D9E013BC4A0E0049B260 /* StoreKit.framework in Frameworks */,
 				355F1CA513B9EE2E00F54E9C /* AddressBook.framework in Frameworks */,
 				355F1CA613B9EE2E00F54E9C /* AddressBookUI.framework in Frameworks */,
@@ -134,6 +137,7 @@
 		355F1C2813B9D84700F54E9C = {
 			isa = PBXGroup;
 			children = (
+				352F186813C177FE0081079A /* SystemConfiguration.framework */,
 				355F1C3D13B9D84700F54E9C /* Rand */,
 				355F1C5713B9D84800F54E9C /* RandTests */,
 				355F1C3613B9D84700F54E9C /* Frameworks */,

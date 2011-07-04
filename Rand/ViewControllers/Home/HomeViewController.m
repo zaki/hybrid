@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import <SystemConfiguration/SystemConfiguration.h>
 
 @implementation HomeViewController
 @synthesize webView;
@@ -46,6 +47,10 @@
   [UIView beginAnimations:nil context:NULL];
   [UIView setAnimationDuration:0.5];
   [webView setAlpha:1.0];
+  
+  
+
+  
   [UIView commitAnimations];
 }
 
@@ -56,7 +61,30 @@
   [activityView startAnimating];
   [self.view setBackgroundColor:[UIColor blackColor]];
   [webView setAlpha:0.0];
-  [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://app8.dev/?minmode=1"]]];
+
+  BOOL connected = NO;
+  SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithName(kCFAllocatorDefault, "staging.local.app8.pikdevja.com");
+  
+  if (reachability != NULL)
+  {
+    SCNetworkReachabilityFlags flags = 0;
+    const BOOL reachable = SCNetworkReachabilityGetFlags(reachability, &flags);
+    CFRelease(reachability);
+    
+    BOOL isReachable = ((flags & kSCNetworkFlagsReachable) != 0);
+    BOOL needsConnection = ((flags & kSCNetworkFlagsConnectionRequired) != 0);
+    
+    if (isReachable && !needsConnection)
+      connected = YES;
+  }
+  
+  if (connected)
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://app8.dev/?minmode=1"]]];
+  else
+  {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Internet Connection Required" message:@"Cannot connect to the internet. Connect to a 3G or WiFi connection." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+  }
 }
 
 - (void)viewDidLoad
