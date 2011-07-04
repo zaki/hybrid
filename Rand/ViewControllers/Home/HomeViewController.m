@@ -36,8 +36,25 @@
 
 #pragma mark - UIWebViewDelegate
 
+- (void) alertView:(UIAlertView*)alert willDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+  if (buttonIndex != [alert cancelButtonIndex])
+  {
+    self.tabBarController.selectedIndex = 2;
+  }
+}
+
 - (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
+  NSLog([[request URL] scheme]);
+  if ([[[request URL] scheme] isEqualToString:@"iap"])
+  {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Shop" message:@"Would you like to go to the shop?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    [alert show];
+    [alert release];
+    return NO;
+  }
+
   return YES;
 }
 
