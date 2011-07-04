@@ -117,7 +117,7 @@
   UIButton *button = (UIButton *)sender;
   UITableViewCell *tableViewCell = (UITableViewCell *)button.superview;
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:tableViewCell.textLabel.text message:[NSString stringWithFormat:@"Buy %@ for %@?", tableViewCell.textLabel.text, button.titleLabel.text] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
-  [FlurryAPI logEvent:[NSString stringWithFormat:@"SHOP:SELECT:", button.titleLabel.text]];
+  [FlurryAPI logEvent:[NSString stringWithFormat:@"SHOP:SELECT:", button.titleLabel.text] withParameters:[NSDictionary dictionaryWithObjectsAndKeys:@"PRICE", button.titleLabel.text, nil]];
   [alert show];
 }
 

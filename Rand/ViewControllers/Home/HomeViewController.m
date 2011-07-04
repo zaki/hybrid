@@ -47,10 +47,6 @@
   [UIView beginAnimations:nil context:NULL];
   [UIView setAnimationDuration:0.5];
   [webView setAlpha:1.0];
-  
-  
-
-  
   [UIView commitAnimations];
 }
 
