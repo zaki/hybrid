@@ -12,10 +12,12 @@
 @interface Person : NSObject {
   NSString *name;
   NSString *email;
+  BOOL sendInvite;
 }
 
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *email;
+@property (nonatomic) BOOL sendInvite;
 
 - (id) initWithName:(NSString *)name email:(NSString *)email;
 

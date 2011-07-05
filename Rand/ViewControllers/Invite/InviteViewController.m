@@ -11,6 +11,7 @@
 #import "InviteTableCell.h"
 #import "InviteViewController.h"
 #import <AddressBook/AddressBook.h>
+#import <MessageUI/MessageUI.h>
 
 @implementation InviteViewController
 
@@ -161,12 +162,54 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+#pragma mark - Invite mailer
+
+- (void) alertView:(UIAlertView*)alert willDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+  if (buttonIndex != [alert cancelButtonIndex])
+  {
+    MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
+    picker.mailComposeDelegate = self;
+    
+    [picker setSubject:@"Play DemoQuest"];
+    
+    // Set up the recipients.
+    NSMutableArray *bccRecipients = [NSMutableArray array];
+    
+    for (int i = 0; i < [people count]; i++)
+    {
+      Person *person = [people objectAtIndex:i];
+      if (person.sendInvite)
+      {
+        [bccRecipients addObject:person.email];
+      }
+    }
+    
+    [picker setBccRecipients:bccRecipients];
+        
+    // Fill out the email body text.
+    NSString *emailBody = @"Hi! I am playing DemoQuest and thought you might enjoy it too. Start playing today at http://app8.dev";
+    [picker setMessageBody:emailBody isHTML:NO];
+    
+    // Present the mail composition interface.
+    [self presentModalViewController:picker animated:YES];
+    [picker release]; // Can safely release the controller now.
+  }
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError *)error
+{
+  [self dismissModalViewControllerAnimated:YES];
+}
+
 - (void) clickedInviteButton:(id)sender
 {
   UIButton *button = (UIButton *)sender;
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Send Invites" message:[NSString stringWithFormat:@"Send Invite to %d of Your Friends?", selectedContacts] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
   [FlurryAPI logEvent:[NSString stringWithFormat:@"INVITE:CLICK"]];
-  [alert show]; 
+  [alert show];
 }
 
 #pragma mark - Table view data source
@@ -208,6 +251,8 @@
   cell.accessoryType = cell.accessoryType == UITableViewCellAccessoryCheckmark ? UITableViewCellAccessoryNone : UITableViewCellAccessoryCheckmark;
   
   selectedContacts += (cell.accessoryType == UITableViewCellAccessoryCheckmark ? 1 : -1);
+  Person *person = [self.people objectAtIndex:[indexPath row]];
+  person.sendInvite = (cell.accessoryType == UITableViewCellAccessoryCheckmark);
   self.navButton.enabled = (selectedContacts > 0);
   
   navTitle.title = [NSString stringWithFormat:@"%d Contact%@ Selected", selectedContacts, selectedContacts > 1 ? @"s" : @""];

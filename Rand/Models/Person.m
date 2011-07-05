@@ -12,6 +12,7 @@
 
 @synthesize name;
 @synthesize email;
+@synthesize sendInvite;
 
 - (id) initWithName:(NSString *)name email:(NSString *)email
 {
@@ -19,6 +20,7 @@
   if (self) {
     self.name = name;
     self.email = email;
+    self.sendInvite = NO;
   }
   return (self);
 }

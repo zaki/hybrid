@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352AD3AE13C2D0A000E622CA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352AD3AD13C2D0A000E622CA /* MessageUI.framework */; };
 		352F185013C1751A0081079A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 352F184D13C1751A0081079A /* Person.m */; };
 		352F185113C1751A0081079A /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 352F184F13C1751A0081079A /* Product.m */; };
 		352F185313C175940081079A /* InviteTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 352F185213C175940081079A /* InviteTableCell.xib */; };
@@ -71,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		352AD3AD13C2D0A000E622CA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		352F184C13C1751A0081079A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Models/Person.h; sourceTree = "<group>"; };
 		352F184D13C1751A0081079A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Models/Person.m; sourceTree = "<group>"; };
 		352F184E13C1751A0081079A /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = Models/Product.h; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352AD3AE13C2D0A000E622CA /* MessageUI.framework in Frameworks */,
 				352F186913C177FE0081079A /* SystemConfiguration.framework in Frameworks */,
 				3586D9E013BC4A0E0049B260 /* StoreKit.framework in Frameworks */,
 				355F1CA513B9EE2E00F54E9C /* AddressBook.framework in Frameworks */,
@@ -178,7 +181,7 @@
 		355F1C2813B9D84700F54E9C = {
 			isa = PBXGroup;
 			children = (
-				352F186813C177FE0081079A /* SystemConfiguration.framework */,
+				352AD3AD13C2D0A000E622CA /* MessageUI.framework */,
 				355F1C3D13B9D84700F54E9C /* Rand */,
 				355F1C5713B9D84800F54E9C /* RandTests */,
 				355F1C3613B9D84700F54E9C /* Frameworks */,
@@ -198,6 +201,7 @@
 		355F1C3613B9D84700F54E9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				352F186813C177FE0081079A /* SystemConfiguration.framework */,
 				3586D9DF13BC4A0E0049B260 /* StoreKit.framework */,
 				355F1CA313B9EE2E00F54E9C /* AddressBook.framework */,
 				355F1CA413B9EE2E00F54E9C /* AddressBookUI.framework */,
