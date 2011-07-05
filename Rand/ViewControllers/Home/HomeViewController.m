@@ -92,7 +92,7 @@
   }
   
   if (connected)
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://app8.dev/?minmode=1"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://staging.local.app8.pikdevja.com/?minmode=1"]]];
   else
   {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Internet Connection Required" message:@"Cannot connect to the internet. Connect to a 3G or WiFi connection." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
