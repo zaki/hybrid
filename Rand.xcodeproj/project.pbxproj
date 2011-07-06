@@ -54,6 +54,9 @@
 		359008A813C1C1D800400CF7 /* character.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 359008A013C1C1CF00400CF7 /* character.vsh */; };
 		359008A913C1C1D800400CF7 /* reflect.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 359008A113C1C1CF00400CF7 /* reflect.fsh */; };
 		359008AA13C1C1D800400CF7 /* reflect.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 359008A213C1C1CF00400CF7 /* reflect.vsh */; };
+		35A56BA913C4305C008B785E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A56BA813C4305C008B785E /* Default.png */; };
+		35A56BAB13C43065008B785E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A56BAA13C43065008B785E /* Default@2x.png */; };
+		35A56BAD13C43209008B785E /* applogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A56BAC13C43209008B785E /* applogo.png */; };
 		35C2210413BB293D007B8941 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C2210313BB293D007B8941 /* libFlurry.a */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +138,9 @@
 		359008A013C1C1CF00400CF7 /* character.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = character.vsh; path = Shaders/character.vsh; sourceTree = "<group>"; };
 		359008A113C1C1CF00400CF7 /* reflect.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = reflect.fsh; path = Shaders/reflect.fsh; sourceTree = "<group>"; };
 		359008A213C1C1CF00400CF7 /* reflect.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = reflect.vsh; path = Shaders/reflect.vsh; sourceTree = "<group>"; };
+		35A56BA813C4305C008B785E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		35A56BAA13C43065008B785E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		35A56BAC13C43209008B785E /* applogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogo.png; sourceTree = "<group>"; };
 		35C220FF13BB293D007B8941 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
 		35C2210013BB293D007B8941 /* FlurryAPI+AppCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlurryAPI+AppCircle.h"; sourceTree = "<group>"; };
 		35C2210113BB293D007B8941 /* FlurryOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryOffer.h; sourceTree = "<group>"; };
@@ -177,6 +183,7 @@
 		355F1C2813B9D84700F54E9C = {
 			isa = PBXGroup;
 			children = (
+				35A56BAC13C43209008B785E /* applogo.png */,
 				352AD3AD13C2D0A000E622CA /* MessageUI.framework */,
 				355F1C3D13B9D84700F54E9C /* Rand */,
 				355F1C5713B9D84800F54E9C /* RandTests */,
@@ -358,6 +365,8 @@
 		3590089A13C1C19B00400CF7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				35A56BAA13C43065008B785E /* Default@2x.png */,
+				35A56BA813C4305C008B785E /* Default.png */,
 				3590089B13C1C1BA00400CF7 /* demon.model */,
 				3590089C13C1C1BA00400CF7 /* demon.png */,
 			);
@@ -489,6 +498,9 @@
 				352F186713C175CF0081079A /* HomeViewController.xib in Resources */,
 				3590089D13C1C1BA00400CF7 /* demon.model in Resources */,
 				3590089E13C1C1BA00400CF7 /* demon.png in Resources */,
+				35A56BA913C4305C008B785E /* Default.png in Resources */,
+				35A56BAB13C43065008B785E /* Default@2x.png in Resources */,
+				35A56BAD13C43209008B785E /* applogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
