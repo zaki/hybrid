@@ -15,13 +15,13 @@
 @synthesize price;
 @synthesize productId;
 
-- (id) initWithName:(NSString *)name price:(NSString *)price productId:(NSString *)productId
+- (id) initWithName:(NSString *)_name price:(NSString *)_price productId:(NSString *)_productId
 {
   self = [super init];
   if (self) {
-    self.name = name;
-    self.price = price;
-    self.productId = productId;
+    self.name = _name;
+    self.price = _price;
+    self.productId = _productId;
   }
   return self;
 }

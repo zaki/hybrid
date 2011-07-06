@@ -11,6 +11,7 @@
 
 @implementation HomeViewController
 @synthesize webView;
+@synthesize activityView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,7 +47,7 @@
 
 - (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-  NSLog([[request URL] scheme]);
+  NSLog(@"%@", [[request URL] scheme]);
   if ([[[request URL] scheme] isEqualToString:@"iap"])
   {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Shop" message:@"Would you like to go to the shop?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
@@ -58,12 +59,12 @@
   return YES;
 }
 
-- (void) webViewDidFinishLoad:(UIWebView *)webView
+- (void) webViewDidFinishLoad:(UIWebView *)_webView
 {
   [activityView stopAnimating];
   [UIView beginAnimations:nil context:NULL];
   [UIView setAnimationDuration:0.5];
-  [webView setAlpha:1.0];
+  [_webView setAlpha:1.0];
   [UIView commitAnimations];
 }
 
@@ -81,7 +82,7 @@
   if (reachability != NULL)
   {
     SCNetworkReachabilityFlags flags = 0;
-    const BOOL reachable = SCNetworkReachabilityGetFlags(reachability, &flags);
+    SCNetworkReachabilityGetFlags(reachability, &flags);
     CFRelease(reachability);
     
     BOOL isReachable = ((flags & kSCNetworkFlagsReachable) != 0);

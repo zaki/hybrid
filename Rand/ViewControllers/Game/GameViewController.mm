@@ -8,6 +8,7 @@
 
 #import "GameViewController.h"
 #import "FlurryAPI.h"
+#import "EAGLView.h"
 
 @implementation GameViewController
 
@@ -15,7 +16,8 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-  if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) 
+  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+  if (self) 
 	{
   }
   return self;

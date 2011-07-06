@@ -57,7 +57,7 @@
     {
       for (int i = 0; i < emailCount; i++)
       {
-        CFStringRef emailLabel = (NSString *)ABMultiValueCopyLabelAtIndex(emails, i);
+        CFStringRef emailLabel = ABMultiValueCopyLabelAtIndex(emails, i);
         if (emailLabel == NULL || CFStringCompare(emailLabel, kABWorkLabel, 0) != 0)
         {
           email = ABMultiValueCopyValueAtIndex(emails, i);
@@ -206,7 +206,6 @@
 
 - (void) clickedInviteButton:(id)sender
 {
-  UIButton *button = (UIButton *)sender;
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Send Invites" message:[NSString stringWithFormat:@"Send Invite to %d of Your Friends?", selectedContacts] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
   [FlurryAPI logEvent:[NSString stringWithFormat:@"INVITE:CLICK"]];
   [alert show];
@@ -226,9 +225,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {  
-  //[self loadPeople];
-  NSInteger row = [indexPath row];
-	
 	// Create a cell if one is not already available
 	UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"any-cell"];
 	if (cell == nil) 
@@ -245,9 +241,9 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)_tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+  UITableViewCell *cell = [_tableView cellForRowAtIndexPath:indexPath];
   cell.accessoryType = cell.accessoryType == UITableViewCellAccessoryCheckmark ? UITableViewCellAccessoryNone : UITableViewCellAccessoryCheckmark;
   
   selectedContacts += (cell.accessoryType == UITableViewCellAccessoryCheckmark ? 1 : -1);

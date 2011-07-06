@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <AddressBook/AddressBook.h>
+#import <MessageUI/MessageUI.h>
 
-@interface InviteViewController : UIViewController<UITableViewDataSource, UITableViewDelegate> {
+@interface InviteViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate> {
   NSMutableArray* people;
   IBOutlet UITableView *tableView;
   IBOutlet UINavigationItem *navTitle;

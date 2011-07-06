@@ -50,10 +50,6 @@
 		3590088C13C1C0A800400CF7 /* vectorUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 3590088313C1C0A800400CF7 /* vectorUtil.c */; };
 		3590089D13C1C1BA00400CF7 /* demon.model in Resources */ = {isa = PBXBuildFile; fileRef = 3590089B13C1C1BA00400CF7 /* demon.model */; };
 		3590089E13C1C1BA00400CF7 /* demon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3590089C13C1C1BA00400CF7 /* demon.png */; };
-		359008A313C1C1CF00400CF7 /* character.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 3590089F13C1C1CF00400CF7 /* character.fsh */; };
-		359008A413C1C1CF00400CF7 /* character.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 359008A013C1C1CF00400CF7 /* character.vsh */; };
-		359008A513C1C1CF00400CF7 /* reflect.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 359008A113C1C1CF00400CF7 /* reflect.fsh */; };
-		359008A613C1C1CF00400CF7 /* reflect.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 359008A213C1C1CF00400CF7 /* reflect.vsh */; };
 		359008A713C1C1D800400CF7 /* character.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3590089F13C1C1CF00400CF7 /* character.fsh */; };
 		359008A813C1C1D800400CF7 /* character.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 359008A013C1C1CF00400CF7 /* character.vsh */; };
 		359008A913C1C1D800400CF7 /* reflect.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 359008A113C1C1CF00400CF7 /* reflect.fsh */; };
@@ -545,10 +541,6 @@
 				3590088A13C1C0A800400CF7 /* modelUtil.c in Sources */,
 				3590088B13C1C0A800400CF7 /* sourceUtil.c in Sources */,
 				3590088C13C1C0A800400CF7 /* vectorUtil.c in Sources */,
-				359008A313C1C1CF00400CF7 /* character.fsh in Sources */,
-				359008A413C1C1CF00400CF7 /* character.vsh in Sources */,
-				359008A513C1C1CF00400CF7 /* reflect.fsh in Sources */,
-				359008A613C1C1CF00400CF7 /* reflect.vsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

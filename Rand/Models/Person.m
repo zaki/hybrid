@@ -14,12 +14,12 @@
 @synthesize email;
 @synthesize sendInvite;
 
-- (id) initWithName:(NSString *)name email:(NSString *)email
+- (id) initWithName:(NSString *)_name email:(NSString *)_email
 {
   self = [super init];
   if (self) {
-    self.name = name;
-    self.email = email;
+    self.name = _name;
+    self.email = _email;
     self.sendInvite = NO;
   }
   return (self);
