@@ -10,7 +10,7 @@
 #import <AddressBook/AddressBook.h>
 #import <MessageUI/MessageUI.h>
 
-@interface InviteViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate> {
+@interface InviteViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate> {
   NSMutableArray* people;
   IBOutlet UITableView *tableView;
   IBOutlet UINavigationItem *navTitle;
